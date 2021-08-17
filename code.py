@@ -133,6 +133,7 @@ while True:
         if key_number < 12: # No pixel for encoder button
             macropad.pixels[key_number] = 0xFFFFFF
             macropad.pixels.show()
+            macropad.start_tone(100)
         for item in sequence:
             # If fourth array value is set to true, 1, or True then send consumer key.
             if consumer_key:
@@ -152,3 +153,4 @@ while True:
         if key_number < 12: # No pixel for encoder button
             macropad.pixels[key_number] = apps[app_index].macros[key_number][0]
             macropad.pixels.show()
+            macropad.stop_tone()
