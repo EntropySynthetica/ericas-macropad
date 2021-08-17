@@ -6,5 +6,7 @@
         "displayio",
         "pylint",
         "terminalio"
-    ]
+    ],
+    "python.analysis.diagnosticSeverityOverrides": {"reportMissingImports": "none"}
+
 }
