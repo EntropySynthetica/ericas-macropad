@@ -127,11 +127,16 @@ while True:
     # are avoided by 'continue' statements above which resume the loop.
 
     sequence = apps[app_index].macros[key_number][2]
+    consumer_key = apps[app_index].macros[key_number][3]
+
     if pressed:
         if key_number < 12: # No pixel for encoder button
             macropad.pixels[key_number] = 0xFFFFFF
             macropad.pixels.show()
         for item in sequence:
+            # If fourth array value is set to true, 1, or True then send consumer key.
+            if consumer_key:
+                macropad.consumer_control.send(item)
             if isinstance(item, int):
                 if item >= 0:
                     macropad.keyboard.press(item)
