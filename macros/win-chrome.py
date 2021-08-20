@@ -3,7 +3,7 @@
 from adafruit_hid.keycode import Keycode # REQUIRED if using Keycode.* values
 
 app = {                      # REQUIRED dict, must be named 'app'
-    'name' : 'Windows Edge', # Application name
+    'name' : 'Chrome Browser', # Application name
     'macros' : [             # List of button macros...
         # COLOR    LABEL    KEY SEQUENCE
         # 1st row ----------
@@ -19,12 +19,12 @@ app = {                      # REQUIRED dict, must be named 'app'
         # 3rd row ----------
         (0x000040, 'Reload', [Keycode.CONTROL, 'r'], False),
         (0x000040, 'Home', [Keycode.ALT, Keycode.HOME], False),
-        (0x000040, 'Private', [Keycode.CONTROL, 'N'], False),
+        (0x000040, 'Incog', [Keycode.CONTROL, 'N'], False),
 
         # 4th row ----------
-        (0x000000, 'Ada', [Keycode.CONTROL, 'n', -Keycode.COMMAND, 'www.adafruit.com\n'], False),   # Adafruit in new window
-        (0x800000, 'Digi', [Keycode.CONTROL, 'n', -Keycode.COMMAND, 'www.digikey.com\n'], False),   # Digi-Key in new window
-        (0x101010, 'Hacks', [Keycode.CONTROL, 'n', -Keycode.COMMAND, 'www.hackaday.com\n'], False), # Hack-a-Day in new win
+        (0x101010, 'Dev Tools', [Keycode.F12], False),
+        (0x000000, '', '', False),
+        (0x101010, 'Weather', [Keycode.CONTROL, 'n', -Keycode.COMMAND, 'www.weather.gov/fgf/\n'], False), # weather in a new window
         
         # Encoder button ---
         (0x000000, '', [Keycode.CONTROL, 'w'], False) # Close tab
