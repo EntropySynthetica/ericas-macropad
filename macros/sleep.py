@@ -1,9 +1,9 @@
-# MACROPAD Hotkeys example: Microsoft Edge web browser for Windows
+# Sleep Macro to turn off display and key lights. 
 
 from adafruit_hid.keycode import Keycode # REQUIRED if using Keycode.* values
 
 app = {                      # REQUIRED dict, must be named 'app'
-    'name' : 'Sleep', # Application name
+    'name' : '', # Application name
     'macros' : [             # List of button macros...
         # COLOR    LABEL    KEY SEQUENCE
         # 1st row ----------

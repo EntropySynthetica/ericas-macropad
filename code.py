@@ -63,8 +63,8 @@ for key_index in range(12):
                                                 macropad.display.height - 1 -
                                                 (3 - y) * 12),
                              anchor_point=(x / 2, 1.0)))
-group.append(Rect(0, 0, macropad.display.width, 12, fill=0xFFFFFF))
-group.append(label.Label(terminalio.FONT, text='', color=0x000000,
+group.append(Rect(0, 0, macropad.display.width, 12, fill=0x000000))
+group.append(label.Label(terminalio.FONT, text='', color=0xFFFFFF,
                          anchored_position=(macropad.display.width//2, -2),
                          anchor_point=(0.5, 0.0)))
 macropad.display.show(group)
