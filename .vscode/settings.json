@@ -17,10 +17,12 @@
     "python.languageServer": "Pylance",
     "python.linting.pylintEnabled": false,
     "python.analysis.extraPaths": [
-        "",
+        "c:\\Users\\Erica\\.vscode\\extensions\\joedevivo.vscode-circuitpython-0.1.20-win32-x64\\boards\\0x239A\\0x8108",
         "c:\\Users\\Erica\\.vscode\\extensions\\joedevivo.vscode-circuitpython-0.1.20-win32-x64\\stubs",
         "c:\\Users\\Erica\\AppData\\Roaming\\Code\\User\\globalStorage\\joedevivo.vscode-circuitpython\\bundle\\20230307\\adafruit-circuitpython-bundle-py-20230307\\lib"
     ],
-    "circuitpython.board.version": null
+    "circuitpython.board.version": null,
+    "circuitpython.board.vid": "0x239A",
+    "circuitpython.board.pid": "0x8108"
 
 }
